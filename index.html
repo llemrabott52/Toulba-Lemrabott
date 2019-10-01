@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Toulba Lemrabott</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+<script>
+  var i = 0; //start point hhhhhh
+  var images = [];
+  var time = 3000;
+
+  // liste of images 
+  images[0] = 'style/Toulba.png'
+  images[1] = 'style/1.jpg'
+  images[2] = 'style/2.jpg'
+  images[3] = 'style/3.jpg'
+  images[4] = 'style/1.jpg'
+  //changing immage evry 3 minutes
+
+  function changeImg() {
+    document.slide.src = images[i];
+    if (i < images.length - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+    setTimeout("changeImg()", time);
+  }
+  window.onload = changeImg;
+</script>
+
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>
+          <a href="index.html">Toulba Alioune<span class="logo_colour">Lemrabott</span></a></h1>
+         <u> <h2><b>Web Developpement Specialist</b></h2></u>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="Espace-Etudiants.html"><b>Info.Personnel</b></a></li>
+          <li><a href="CreditCours.html"><b>Experiance</b></a></li>
+          <li><a href="Info-Arch.html"><b>Education</b></a></li>
+          <li><a href="Math-Arch.html"><b>Certificates</b></a></li>
+          <li><a href="Espace-Etudiants.html"><b>Skills</b></a></li>
+          <li><a href="contact.html"><b>Languages</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      
+      <div class="sidebar">
+      <br><br><br>  <img name="slide" width="100%" height="100%"/>
+      </div>
+
+
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1><b><font face="arial Black">Welcome every one !</font></b></h1>
+        <p>
+          <font color="red"><u>Introduction </u></font>:<br>
+          <b><strong>My name is Toulba Alioune Lemrabott, I'm 24 years old, born at 25-02-1996, student of Nouakchott University, 
+          at The Faculty of Science and Technology.
+          <br>Email: <a href="tlblemrabott52@gmail.com" >tlblemrabott52@gmail.com.</a> 
+          <br>My field of study is Computer Science and Information System. Well, Computer Science belongs to my hobbies too.</b></strong></p>
+
+         <p><b><strong>I am student in the final year of the Master's Degree in Computer Science, looking for an internship or a final project in
+          the field of web development, with a view to building a professional project that can help me deepen my professional
+          knowledge to create practical software systems with social and economic values, using software development
+          approaches, which can facilitate the transaction process between institutions and citizens</b></strong></p>
+            
+        <p><b><font face ="Lucida Calligraphy,Comic Sans MS,Lucida Console"> 
+          Good Luck.</font></b>.</p>
+          <img src="style/4.jpg" width="600" height="300" />
+        <h2><b><font color="blue" face="font-face">My Resumes as PDF</font></b></h2>
+        <p>Ces Logiciels vous allez l'utiliser dans cette specialité, veillez le telecharger et l'installez !:</p>
+      </div>
+      
+        <table style="width:100%; border-spacing:0;">
+          <tr><th>Nom du logiciel</th><th>Taille                        </th><th>Télecharger</th></tr>
+          <tr><td>netbeans_8-1_fr_429613.exe</td><td>220.1MB</td><td ><a href="https://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-windows.exe" title="Télécharger le logiciel" target="_blank"><img src="Image_Pub/IMG_5360.PNG" alt="mypdf1" width="150" height="25"></a></td></tr>
+          <tr><td>JavaSetup8u131.exe(jre)</td><td>71.2MB</td><td><a href="http://javadl.oracle.com/webapps/download/AutoDL?BundleId=235727_2787e4a523244c269598db4e85c51e0c" download="Mypdf" target="_blank" title="Telecharger le Ficher"><img src="Image_Pub/IMG_5360.PNG" alt="mypdf1" width="150" height="25"></a></td></tr>
+        </table>
+      </div>
+    </div>
+    <br><br>
+    <div id="footer">
+      Copyright &copy; Math-Informatique | <a href="http://www.Archives.com">Archives</a> | <a href="http://www.una.mr">una</a> | <a href="#">Faculté de Science et technique</a>
+    </div>
+  </div>
+</body>
+</html>
